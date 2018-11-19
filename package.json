@@ -32,9 +32,10 @@
     "main": "src/index.js",
     "scripts": {
       "hooks": "./utils/hooks/install",
-      "test": "echo \"nothing yet\"",
+      "test": "./utils/scripts/test",
       "lint": "./utils/scripts/lint",
       "lint:full": "./utils/scripts/lint-full",
+      "docs": "./utils/scripts/docs",
       "todo": "./utils/scripts/todo"
     }
 }
