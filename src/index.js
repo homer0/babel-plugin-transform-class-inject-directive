@@ -1,6 +1,10 @@
 const InjectDirectiveParser = require('./injectDirectiveParser');
-
-module.exports = () => {
+/**
+ * Generates the object that Babel will load in order to hook the parser for every functions and
+ * methods are being processed.
+ * @return {BabelPluginTransformClassInjectDirective}
+ */
+const plugin = () => {
   let parser;
   return {
     visitor: {
@@ -46,3 +50,5 @@ module.exports = () => {
     },
   };
 };
+
+module.exports = plugin;
