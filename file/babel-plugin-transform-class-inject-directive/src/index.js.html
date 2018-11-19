@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">babel-plugin-transform-class-inject-directive/src/index.js | babel-plugin-transform-class-inject-directive</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Detect an inject directive on a class constructor and define a static property with the list of dependencies."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="babel-plugin-transform-class-inject-directive"><meta property="twitter:description" content="Detect an inject directive on a class constructor and define a static property with the list of dependencies."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/homer0/babel-plugin-transform-class-inject-directive"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#src">src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser.html">InjectDirectiveParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-plugin">plugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-BabelPluginTransformClassInjectDirective">BabelPluginTransformClassInjectDirective</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ClassMethodVisitor">ClassMethodVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FunctionDeclarationVisitor">FunctionDeclarationVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FunctionExpressionVisitor">FunctionExpressionVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ParserCallback">ParserCallback</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitor">ProgramVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitorFinish">ProgramVisitorFinish</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitorStart">ProgramVisitorStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Visitors">Visitors</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">AssignmentExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">ExpressionStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths">Path</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">babel-plugin-transform-class-inject-directive/src/index.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const InjectDirectiveParser = require(&apos;./injectDirectiveParser&apos;);
+/**
+ * Generates the object that Babel will load in order to hook the parser for every functions and
+ * methods are being processed.
+ * @return {BabelPluginTransformClassInjectDirective}
+ */
+const plugin = () =&gt; {
+  let parser;
+  return {
+    visitor: {
+      ClassMethod: {
+        enter(path) {
+          if (parser) {
+            parser.parseClassMethod(path);
+          } else {
+            throw new Error(&apos;`ClassMethod.enter` can\&apos;t be called before `Program.enter`&apos;);
+          }
+        },
+      },
+      FunctionDeclaration: {
+        enter(path) {
+          if (path) {
+            parser.parseFunction(path);
+          } else {
+            throw new Error(&apos;`FunctionDeclaration.enter` can\&apos;t be called before `Program.enter`&apos;);
+          }
+        },
+      },
+      FunctionExpression: {
+        enter(path) {
+          if (path) {
+            parser.parseFunction(path);
+          } else {
+            throw new Error(&apos;`FunctionExpression.enter` can\&apos;t be called before `Program.enter`&apos;);
+          }
+        },
+      },
+      Program: {
+        enter(path, file) {
+          parser = new InjectDirectiveParser(file);
+        },
+        exit() {
+          if (parser) {
+            parser.transform();
+          } else {
+            throw new Error(&apos;`Program.exit` can\&apos;t be called before `Program.enter`&apos;);
+          }
+        },
+      },
+    },
+  };
+};
+
+module.exports = plugin;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

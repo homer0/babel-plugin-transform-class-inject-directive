@@ -1,0 +1,1570 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "babel-plugin-transform-class-inject-directive/src/index.js",
+    "content": "const InjectDirectiveParser = require('./injectDirectiveParser');\n/**\n * Generates the object that Babel will load in order to hook the parser for every functions and\n * methods are being processed.\n * @return {BabelPluginTransformClassInjectDirective}\n */\nconst plugin = () => {\n  let parser;\n  return {\n    visitor: {\n      ClassMethod: {\n        enter(path) {\n          if (parser) {\n            parser.parseClassMethod(path);\n          } else {\n            throw new Error('`ClassMethod.enter` can\\'t be called before `Program.enter`');\n          }\n        },\n      },\n      FunctionDeclaration: {\n        enter(path) {\n          if (path) {\n            parser.parseFunction(path);\n          } else {\n            throw new Error('`FunctionDeclaration.enter` can\\'t be called before `Program.enter`');\n          }\n        },\n      },\n      FunctionExpression: {\n        enter(path) {\n          if (path) {\n            parser.parseFunction(path);\n          } else {\n            throw new Error('`FunctionExpression.enter` can\\'t be called before `Program.enter`');\n          }\n        },\n      },\n      Program: {\n        enter(path, file) {\n          parser = new InjectDirectiveParser(file);\n        },\n        exit() {\n          if (parser) {\n            parser.transform();\n          } else {\n            throw new Error('`Program.exit` can\\'t be called before `Program.enter`');\n          }\n        },\n      },\n    },\n  };\n};\n\nmodule.exports = plugin;\n",
+    "static": true,
+    "longname": "/Users/homer0/CODE/node/babel-plugin-transform-class-inject-directive/src/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "function",
+    "name": "plugin",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/index.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/index.js~plugin",
+    "access": "public",
+    "export": true,
+    "importPath": "babel-plugin-transform-class-inject-directive/babel-plugin-transform-class-inject-directive/src/index.js",
+    "importStyle": "plugin",
+    "description": "Generates the object that Babel will load in order to hook the parser for every functions and\nmethods are being processed.",
+    "lineNumber": 7,
+    "return": {
+      "nullable": null,
+      "types": [
+        "BabelPluginTransformClassInjectDirective"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "params": []
+  },
+  {
+    "__docId__": 50,
+    "kind": "file",
+    "name": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js",
+    "content": "const babelTypes = require('babel-types');\n/**\n * Parses class methods and functions in order to detect the use of an _\"inject directive\"_ and\n * replace it with a static property.\n * This class works as a helper for a Babel plugin.\n * @example\n * // Input\n * class MyService {\n *   constructor(depOne, depTwo) {\n *     'inject';\n *     ...\n *   }\n * }\n * // Output\n * class MyService {\n *   constructor(depOne, depTwo) {\n *     'inject';\n *     ...\n *   }\n * }\n * MyService.inject = ['depOne', 'depTwo']\n */\nclass InjectDirectiveParser {\n  /**\n   * @param {Path} file The information of the File Babel is processing.\n   */\n  constructor(file) {\n    /**\n     * A dictionary with the parser options.\n     * @type {Object}\n     * @property {String} directive The name of the directive it should find in order to apply the\n     *                              transformation.\n     * @property {String} property  The name of the property where the dependencies will be added.\n     * @access protected\n     * @ignore\n     */\n    this._options = this._parseOptions(file.opts);\n    /**\n     * The list of {@link Path} elements that were added via the _\"parse methods\"_. Once\n     * {@link InjectDirectiveParser#transform} gets called, they will be processed and the\n     * transformation applied.\n     * @type {Array}\n     * @access protected\n     * @ignore\n     */\n    this._paths = [];\n  }\n  /**\n   * This is called from a {@link ParserCallback} when the object being processed is a class\n   * method.\n   * @param {Path} path The information of the object being processed.\n   */\n  parseClassMethod(path) {\n    // Only check for constructor methods that have the directive.\n    if (\n      path.node.kind === 'constructor' &&\n      this._hasDirective(path)\n    ) {\n      // Find the class declaration/expression for that constructor and add it to the list.\n      path.getAncestry().some((ancestor) => {\n        let stop = false;\n        if (ancestor.isClassDeclaration() || ancestor.isClassExpression()) {\n          stop = true;\n          this._addPath(ancestor);\n        }\n\n        return stop;\n      });\n    }\n  }\n  /**\n   * This is called from a {@link ParserCallback} when the object being processed is a function\n   * expression/declaration.\n   * @param {Path} path The information of the object being processed.\n   */\n  parseFunction(path) {\n    // Check if it has the directive.\n    if (this._hasDirective(path)) {\n      // If it's a function declaration, add it to the list.\n      if (babelTypes.isFunctionDeclaration(path.node)) {\n        this._addPath(path);\n      } else if (babelTypes.isVariableDeclarator(path.parent)) {\n        /**\n         * otherwise, if it's an expression (being declared through a variable), add the parent\n         * path.\n         */\n        this._addPath(path.parentPath);\n      }\n    }\n  }\n  /**\n   * This is called from {@link ProgramVisitorFinish}, it takes all the parsed elements and\n   * processes them in order to apply the transformations.\n   */\n  transform() {\n    this._paths.forEach((path) => this._transformPath(path));\n  }\n  /**\n   * Adds a path to the list that will be processed, after checking that is not already there.\n   * @param {Path} path The path to add.\n   * @access protected\n   * @ignore\n   */\n  _addPath(path) {\n    if (!this._pathExists(path)) {\n      this._paths.push(path);\n    }\n  }\n  /**\n   * Adds the property with the dependencies after an specific {@link Path}.\n   * @param {Array}  params The list of parameters.\n   * @param {Path}   path   The reference {@link Path}.\n   * @param {String} name   The name of the function/method/variable _\"owner\"_ of the property.\n   * @access protected\n   * @ignore\n   */\n  _addPropertyAfterPath(params, path, name) {\n    const newPath = Object.assign({}, path);\n    newPath.node.trailingComments = [];\n    newPath.parentPath.scope.crawl();\n    newPath.insertAfter(this._createPropertyExpression(name, params));\n  }\n  /**\n   * Tries to add the property with the dependencies after an specific {@link Path}. By _\"try\"_, it\n   * means that it will check if the function is hoisted and in that case it will try to add it\n   * on the top of the scope, otherwise, it will just add it after.\n   * @param {Array}  params The list of parameters.\n   * @param {Path}   path   The reference {@link Path}.\n   * @param {String} name   The name of the function/method/variable _\"owner\"_ of the property.\n   * @access protected\n   * @ignore\n   */\n  _addPropertyBeforePath(params, path, name) {\n    const binding = path.scope.getBinding(name);\n    const expression = this._createPropertyExpression(name, params);\n    if (binding && binding.kind === 'hoisted') {\n      let block = binding.scope.getBlockParent().path;\n      if (block.isFunction()) {\n        block = block.get('body');\n      }\n\n      block.unshiftContainer('body', [expression]);\n    } else {\n      path.parentPath.scope.crawl();\n      path.insertAfter(expression);\n    }\n  }\n  /**\n   * Creates the declaration of the property and its value.\n   * @param {String} name   The name of the function/method/variable _\"owner\"_ of the property.\n   * @param {Array}  params The list of parameters the function/method receives.\n   * @return {ExpressionStatement}\n   * @access protected\n   * @ignore\n   */\n  _createPropertyExpression(name, params) {\n    const left = babelTypes.isNode(name) ? name : babelTypes.identifier(name);\n    const paramsAsString = params.map((param) => (\n      babelTypes.stringLiteral(this._getParamName(param))\n    ));\n    const list = babelTypes.arrayExpression(paramsAsString);\n    const member = babelTypes.memberExpression(\n      left,\n      babelTypes.identifier(this._options.property)\n    );\n    return babelTypes.expressionStatement(babelTypes.assignmentExpression('=', member, list));\n  }\n  /**\n   * A helper function that generates a unique ID for a given {@link Path}. This is used by\n   * {@link InjectDirectiveParser#_addPath} when trying to identify if a path is already on the\n   * list.\n   * @param {Path} path The path for which the ID will be generated.\n   * @return {String}\n   * @access protected\n   * @ignore\n   */\n  _generatePathId(path) {\n    return `${path.node.start}-${path.node.end}`;\n  }\n  /**\n   * Given the {@link Node} of a class declaration/expression, this method will try to find the\n   * {@link Node} for its constructor.\n   * @param {Node} clsNode A class declaration/expression node.\n   * @return {?Node}\n   * @access protected\n   * @ignore\n   */\n  _getClassConstructor(clsNode) {\n    return clsNode.body.body.find((node) => node.kind === 'constructor');\n  }\n  /**\n   * Given a function/method parameter, this method will check if it's an actuall raw parameter,\n   * in which case it will return it as it is, or an {@link AssignmentExpression}, where the name\n   * is on the `left` property.\n   * @param {string|AssignmentExpression} param The parameter information.\n   * @return {string}\n   * @access protected\n   * @ignore\n   */\n  _getParamName(param) {\n    const newParam = babelTypes.isAssignmentPattern(param) ?\n      param.left :\n      param;\n\n    return newParam.name;\n  }\n  /**\n   * Checks whether a functon/method has the required directive.\n   * @param {Path} path The function/method path.\n   * @return {Boolean}\n   * @access protected\n   * @ignore\n   */\n  _hasDirective(path) {\n    let result = false;\n    const { directives } = path.node.body;\n    if (directives && directives.length) {\n      result = directives.some(({ value }) => value.value === this._options.directive);\n    }\n\n    return result;\n  }\n  /**\n   * Checks whether a {@link Path} is already on the list that will be processed or not.\n   * @param {Path} path The path to check.\n   * @return {Boolean}\n   * @access protected\n   * @ignore\n   */\n  _pathExists(path) {\n    const id = this._generatePathId(path);\n    return this._paths.some((pathItem) => this._generatePathId(pathItem) === id);\n  }\n  /**\n   * Generates a new set of options for the class by merging the received paramter and a set of\n   * defaults. This is called from the constructor, using the recived file options as overwrites.\n   * @param  {Object} [options={}] The options to overwrite the default ones.\n   * @return {Object}\n   * @property {string} directive The name of the directive the parser will look for.\n   * @property {string} property  The name of the property where the dependencies will be defined.\n   * @access protected\n   * @ignore\n   */\n  _parseOptions(options = {}) {\n    return Object.assign(\n      {\n        directive: 'inject',\n        property: 'inject',\n      },\n      options\n    );\n  }\n  /**\n   * Processes and transform a given {@link Path} in order to add the required property.\n   * @param {Path} originalPath The path to transform.\n   * @access protected\n   * @ignore\n   */\n  _transformPath(originalPath) {\n    let path = originalPath;\n    let { node } = path;\n\n    let topPath;\n    let name;\n    if (babelTypes.isVariableDeclarator(path.node)) {\n      topPath = path.parentPath;\n      ({ name } = node.id);\n      node = node.init;\n      path = path.get('init');\n    } else {\n      topPath = path;\n    }\n\n    if (babelTypes.isExportDeclaration(topPath.parent)) {\n      topPath = topPath.parentPath;\n    }\n\n    if (babelTypes.isClass(node)) {\n      ({ name } = node.id);\n      node = this._getClassConstructor(node);\n    }\n\n    if (node.params.length) {\n      if (babelTypes.isFunctionExpression(node) || babelTypes.isClassMethod(node)) {\n        this._addPropertyAfterPath(node.params, topPath, name);\n      } else {\n        this._addPropertyBeforePath(node.params, path, node.id.name);\n      }\n    }\n  }\n}\n\nmodule.exports = InjectDirectiveParser;\n",
+    "static": true,
+    "longname": "/Users/homer0/CODE/node/babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 51,
+    "kind": "class",
+    "name": "InjectDirectiveParser",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "access": "public",
+    "export": true,
+    "importPath": "babel-plugin-transform-class-inject-directive/babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js",
+    "importStyle": "InjectDirectiveParser",
+    "description": "Parses class methods and functions in order to detect the use of an _\"inject directive\"_ and\nreplace it with a static property.\nThis class works as a helper for a Babel plugin.",
+    "examples": [
+      "// Input\nclass MyService {\n  constructor(depOne, depTwo) {\n    'inject';\n    ...\n  }\n}\n// Output\nclass MyService {\n  constructor(depOne, depTwo) {\n    'inject';\n    ...\n  }\n}\nMyService.inject = ['depOne', 'depTwo']"
+    ],
+    "lineNumber": 23,
+    "interface": false
+  },
+  {
+    "__docId__": 52,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 27,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "file",
+        "description": "The information of the File Babel is processing."
+      }
+    ]
+  },
+  {
+    "__docId__": 53,
+    "kind": "member",
+    "name": "_options",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_options",
+    "access": "protected",
+    "description": "A dictionary with the parser options.",
+    "lineNumber": 37,
+    "ignore": true,
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "directive",
+        "description": "The name of the directive it should find in order to apply the\n                             transformation."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "property",
+        "description": "The name of the property where the dependencies will be added."
+      }
+    ],
+    "type": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "member",
+    "name": "_paths",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_paths",
+    "access": "protected",
+    "description": "The list of {@link Path} elements that were added via the _\"parse methods\"_. Once\n{@link InjectDirectiveParser#transform} gets called, they will be processed and the\ntransformation applied.",
+    "lineNumber": 46,
+    "ignore": true,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Array"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "parseClassMethod",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#parseClassMethod",
+    "access": "public",
+    "description": "This is called from a {@link ParserCallback} when the object being processed is a class\nmethod.",
+    "lineNumber": 53,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The information of the object being processed."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "parseFunction",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#parseFunction",
+    "access": "public",
+    "description": "This is called from a {@link ParserCallback} when the object being processed is a function\nexpression/declaration.",
+    "lineNumber": 76,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The information of the object being processed."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "transform",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#transform",
+    "access": "public",
+    "description": "This is called from {@link ProgramVisitorFinish}, it takes all the parsed elements and\nprocesses them in order to apply the transformations.",
+    "lineNumber": 95,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 58,
+    "kind": "method",
+    "name": "_addPath",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_addPath",
+    "access": "protected",
+    "description": "Adds a path to the list that will be processed, after checking that is not already there.",
+    "lineNumber": 104,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The path to add."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 59,
+    "kind": "method",
+    "name": "_addPropertyAfterPath",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_addPropertyAfterPath",
+    "access": "protected",
+    "description": "Adds the property with the dependencies after an specific {@link Path}.",
+    "lineNumber": 117,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The list of parameters."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The reference {@link Path}."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "The name of the function/method/variable _\"owner\"_ of the property."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "_addPropertyBeforePath",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_addPropertyBeforePath",
+    "access": "protected",
+    "description": "Tries to add the property with the dependencies after an specific {@link Path}. By _\"try\"_, it\nmeans that it will check if the function is hoisted and in that case it will try to add it\non the top of the scope, otherwise, it will just add it after.",
+    "lineNumber": 133,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The list of parameters."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The reference {@link Path}."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "The name of the function/method/variable _\"owner\"_ of the property."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 61,
+    "kind": "method",
+    "name": "_createPropertyExpression",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_createPropertyExpression",
+    "access": "protected",
+    "description": "Creates the declaration of the property and its value.",
+    "lineNumber": 156,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "String"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "name",
+        "description": "The name of the function/method/variable _\"owner\"_ of the property."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "Array"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "params",
+        "description": "The list of parameters the function/method receives."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "ExpressionStatement"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "method",
+    "name": "_generatePathId",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_generatePathId",
+    "access": "protected",
+    "description": "A helper function that generates a unique ID for a given {@link Path}. This is used by\n{@link InjectDirectiveParser#_addPath} when trying to identify if a path is already on the\nlist.",
+    "lineNumber": 177,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The path for which the ID will be generated."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "String"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "_getClassConstructor",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_getClassConstructor",
+    "access": "protected",
+    "description": "Given the {@link Node} of a class declaration/expression, this method will try to find the\n{@link Node} for its constructor.",
+    "lineNumber": 188,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Node"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "clsNode",
+        "description": "A class declaration/expression node."
+      }
+    ],
+    "return": {
+      "nullable": true,
+      "types": [
+        "Node"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "_getParamName",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_getParamName",
+    "access": "protected",
+    "description": "Given a function/method parameter, this method will check if it's an actuall raw parameter,\nin which case it will return it as it is, or an {@link AssignmentExpression}, where the name\nis on the `left` property.",
+    "lineNumber": 200,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "string",
+          "AssignmentExpression"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "param",
+        "description": "The parameter information."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "_hasDirective",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_hasDirective",
+    "access": "protected",
+    "description": "Checks whether a functon/method has the required directive.",
+    "lineNumber": 214,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The function/method path."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "_pathExists",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_pathExists",
+    "access": "protected",
+    "description": "Checks whether a {@link Path} is already on the list that will be processed or not.",
+    "lineNumber": 230,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The path to check."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Boolean"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "_parseOptions",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_parseOptions",
+    "access": "protected",
+    "description": "Generates a new set of options for the class by merging the received paramter and a set of\ndefaults. This is called from the constructor, using the recived file options as overwrites.",
+    "lineNumber": 244,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Object"
+        ],
+        "spread": false,
+        "optional": true,
+        "defaultValue": "{}",
+        "defaultRaw": {},
+        "name": "options",
+        "description": "The options to overwrite the default ones."
+      }
+    ],
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "directive",
+        "description": "The name of the directive the parser will look for."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "string"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "property",
+        "description": "The name of the property where the dependencies will be defined."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "Object"
+      ],
+      "spread": false,
+      "description": ""
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "_transformPath",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser#_transformPath",
+    "access": "protected",
+    "description": "Processes and transform a given {@link Path} in order to add the required property.",
+    "lineNumber": 259,
+    "ignore": true,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "originalPath",
+        "description": "The path to transform."
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 69,
+    "kind": "file",
+    "name": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "content": "/**\n * @external {Path} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths\n */\n\n/**\n * @external {Node} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n */\n\n/**\n * @external {ExpressionStatement} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n */\n\n/**\n * @external {AssignmentExpression} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n */\n\n/**\n * @typedef {Function} ParserCallback\n * @param {Path} path The Babel information for the object that is currently being processed.\n * @throws {Error} if called before {@link ProgramVisitorStart}.\n */\n\n/**\n * @typedef {Object} ClassMethodVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the method.\n */\n\n/**\n * @typedef {Object} FunctionDeclarationVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n */\n\n/**\n * @typedef {Object} FunctionExpressionVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n */\n\n/**\n * @typedef {Function} ProgramVisitorStart\n */\n\n/**\n * @typedef {Function} ProgramVisitorFinish\n * @throws {error} if called before {@link ProgramVisitorStart}\n */\n\n/**\n * @typedef {Object} ProgramVisitor\n * @property {ProgramVisitorStart}  enter This method is called when Babel starts processing a\n *                                        file. It takes care of creating an instance of\n *                                        {@link InjectDirectiveParser} so the other\n *                                        {@link ParserCallback} can use.\n * @property {ProgramVisitorFinish} exit  This method is called when Babel finishes processing a\n *                                        file. After parsing all available methods and functions,\n *                                        it uses the instance of {@link InjectDirectiveParser}\n *                                        to apply the changes on the code.\n */\n\n/**\n * @typedef {Object} Visitors\n * @property {ClassMethodVisitor}         ClassMethod         The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a class method.\n * @property {FunctionDeclarationVisitor} FunctionDeclaration The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function declaration\n *                                                            (`function name (...) { }`).\n * @property {FunctionExpressionVisitor}  FunctionExpression  The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function expression\n *                                                            (`const name = function (...) { }`).\n * @property {ProgramVisitor}             Program             The methods inside this object are\n *                                                            called when Babel starts and\n *                                                            finishes processing file.\n */\n\n/**\n * @typedef {Object} BabelPluginTransformClassInjectDirective\n * @property {Visitors} visitor A dictionary with keys for each object type Babel processes. In the\n *                              case of this plugin, it only has keys for methods and functions.\n */\n",
+    "static": true,
+    "longname": "/Users/homer0/CODE/node/babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 70,
+    "kind": "external",
+    "name": "Path",
+    "externalLink": "https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~Path",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 71,
+    "kind": "external",
+    "name": "Node",
+    "externalLink": "https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~Node",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 72,
+    "kind": "external",
+    "name": "ExpressionStatement",
+    "externalLink": "https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~ExpressionStatement",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 73,
+    "kind": "external",
+    "name": "AssignmentExpression",
+    "externalLink": "https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~AssignmentExpression",
+    "access": "public",
+    "description": ""
+  },
+  {
+    "__docId__": 74,
+    "kind": "typedef",
+    "name": "ParserCallback",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~ParserCallback",
+    "access": "public",
+    "description": "",
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "Path"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "path",
+        "description": "The Babel information for the object that is currently being processed."
+      }
+    ],
+    "throws": [
+      {
+        "types": [
+          "Error"
+        ],
+        "description": "if called before {@link ProgramVisitorStart}."
+      }
+    ],
+    "type": {
+      "types": [
+        "Function"
+      ],
+      "optional": false,
+      "name": "ParserCallback"
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "typedef",
+    "name": "ClassMethodVisitor",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~ClassMethodVisitor",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "ParserCallback"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "enter",
+        "description": "This is called when Babel starts processing the method."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "ClassMethodVisitor"
+    }
+  },
+  {
+    "__docId__": 76,
+    "kind": "typedef",
+    "name": "FunctionDeclarationVisitor",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~FunctionDeclarationVisitor",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "ParserCallback"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "enter",
+        "description": "This is called when Babel starts processing the function."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "FunctionDeclarationVisitor"
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "typedef",
+    "name": "FunctionExpressionVisitor",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~FunctionExpressionVisitor",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "ParserCallback"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "enter",
+        "description": "This is called when Babel starts processing the function."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "FunctionExpressionVisitor"
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "typedef",
+    "name": "ProgramVisitorStart",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~ProgramVisitorStart",
+    "access": "public",
+    "description": "",
+    "type": {
+      "types": [
+        "Function"
+      ],
+      "optional": false,
+      "name": "ProgramVisitorStart"
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "typedef",
+    "name": "ProgramVisitorFinish",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~ProgramVisitorFinish",
+    "access": "public",
+    "description": "",
+    "throws": [
+      {
+        "types": [
+          "error"
+        ],
+        "description": "if called before {@link ProgramVisitorStart}"
+      }
+    ],
+    "type": {
+      "types": [
+        "Function"
+      ],
+      "optional": false,
+      "name": "ProgramVisitorFinish"
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "typedef",
+    "name": "ProgramVisitor",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~ProgramVisitor",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "ProgramVisitorStart"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "enter",
+        "description": "This method is called when Babel starts processing a\n                                       file. It takes care of creating an instance of\n                                       {@link InjectDirectiveParser} so the other\n                                       {@link ParserCallback} can use."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ProgramVisitorFinish"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "exit",
+        "description": "This method is called when Babel finishes processing a\n                                       file. After parsing all available methods and functions,\n                                       it uses the instance of {@link InjectDirectiveParser}\n                                       to apply the changes on the code."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "ProgramVisitor"
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "typedef",
+    "name": "Visitors",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~Visitors",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "ClassMethodVisitor"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "ClassMethod",
+        "description": "The methods inside this object are\n                                                           only called when Babel is processing\n                                                           a class method."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "FunctionDeclarationVisitor"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "FunctionDeclaration",
+        "description": "The methods inside this object are\n                                                           only called when Babel is processing\n                                                           a function declaration\n                                                           (`function name (...) { }`)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "FunctionExpressionVisitor"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "FunctionExpression",
+        "description": "The methods inside this object are\n                                                           only called when Babel is processing\n                                                           a function expression\n                                                           (`const name = function (...) { }`)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "ProgramVisitor"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "Program",
+        "description": "The methods inside this object are\n                                                           called when Babel starts and\n                                                           finishes processing file."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "Visitors"
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "typedef",
+    "name": "BabelPluginTransformClassInjectDirective",
+    "memberof": "babel-plugin-transform-class-inject-directive/src/typedef.js",
+    "static": true,
+    "longname": "babel-plugin-transform-class-inject-directive/src/typedef.js~BabelPluginTransformClassInjectDirective",
+    "access": "public",
+    "description": "",
+    "properties": [
+      {
+        "nullable": null,
+        "types": [
+          "Visitors"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "visitor",
+        "description": "A dictionary with keys for each object type Babel processes. In the\n                             case of this plugin, it only has keys for methods and functions."
+      }
+    ],
+    "type": {
+      "types": [
+        "Object"
+      ],
+      "optional": false,
+      "name": "BabelPluginTransformClassInjectDirective"
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# babel-plugin-transform-class-inject-directive\n\n[![Travis](https://img.shields.io/travis/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square)](https://travis-ci.org/homer0/babel-plugin-transform-class-inject-directive)\n[![Coveralls github](https://img.shields.io/coveralls/github/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square)](https://coveralls.io/github/homer0/babel-plugin-transform-class-inject-directive?branch=master)\n[![David](https://img.shields.io/david/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square)](https://david-dm.org/homer0/babel-plugin-transform-class-inject-directive)\n[![David](https://img.shields.io/david/dev/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square)](https://david-dm.org/homer0/babel-plugin-transform-class-inject-directive)\n\nThis is a utility for projects that relay heavily on classes and dependency injection. If a class constructor uses an `'inject'` directive, the list of parameter names will be copied as strings and placed on an `inject` static property, so your DI tool can read them.\n\n## Example\n\n### In\n\n```js\nclass MyService {\n  constructor(depOne, depTwo) {\n    'inject';\n    ...\n  }\n}\n```\n\n### Out\n\n```js\nclass MyService {\n  constructor(depOne, depTwo) {\n    'inject';\n    ...\n  }\n}\n\nMyService.inject = ['depOne', 'depTwo']\n```\n\n## Usage\n\n### Via `.babelrc` (Recommended)\n\n**.babelrc**\n\n```json\n{\n  \"plugins\": [\"transform-class-inject-directive\"]\n}\n```\n\n### Via CLI\n\n```sh\nbabel --plugins transform-class-inject-directive script.js\n```\n\n### Via Node API\n\n```javascript\nrequire('@babel/core').transform('code', {\n  plugins: ['transform-class-inject-directive'],\n});\n```\n\n## Options\n\n### `directive`\n\n`string`, defaults to `inject`.\n\nTells the plugin which is the name of the directive it should find in order to apply the transformation.\n\n### `property`\n\n`string`, defaults to `inject`.\n\nThis is the name of the property the plugin will create in order to define the list of dependencies.\n\n## Warning\n\nThis only works on classes and regular functions (no arrow). The idea was for it to only work on classes, and the only reason it also works with functions is in order to add support in case you are transforming classes.\n\n## Development\n\nBefore doing anything, install the repository hooks:\n\n```bash\n# You can either use npm or yarn, it doesn't matter\nyarn run hooks\n```\n\n### NPM/Yarn Tasks\n\n| Task                 | Description                         |\n|----------------------|-------------------------------------|\n| `yarn run hooks`     | Install the GIT repository hooks.   |\n| `yarn test`          | Run the project unit tests.         |\n| `yarn run lint`      | Lint the modified files.            |\n| `yarn run lint:full` | Lint the project code.              |\n| `yarn run docs`      | Generate the project documentation. |\n| `yarn run todo`      | List all the pending to-do's.       |\n\n### Testing\n\nI use [Jest](https://facebook.github.io/jest/) with [Jest-Ex](https://yarnpkg.com/en/package/jest-ex) to test the project. The configuration file is on `./.jestrc`, the tests and mocks are on `./tests` and the script that runs it is on `./utils/scripts/test`.\n\n### Linting\n\nI use [ESlint](http://eslint.org) to validate all our JS code. The configuration file for the project code is on `./.eslintrc` and for the tests on `./tests/.eslintrc` (which inherits from the one on the root), there's also an `./.eslintignore` to ignore some files on the process, and the script that runs it is on `./utils/scripts/lint`.\n\n### Documentation\n\nI use [ESDoc](http://esdoc.org) to generate HTML documentation for the project. The configuration file is on `./.esdocrc` and the script that runs it is on `./utils/scripts/docs`.\n\n### To-Dos\n\nI use `@todo` comments to write all the pending improvements and fixes, and [Leasot](https://yarnpkg.com/en/package/leasot) to generate a report. The script that runs it is on `./utils/scripts/todo`.",
+    "longname": "/Users/homer0/CODE/node/babel-plugin-transform-class-inject-directive/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n    \"name\": \"babel-plugin-transform-class-inject-directive\",\n    \"description\": \"Detect an inject directive on a class constructor and define a static property with the list of dependencies.\",\n    \"homepage\": \"https://homer0.github.io/babel-plugin-transform-class-inject-directive/\",\n    \"version\": \"1.0.2\",\n    \"repository\": \"homer0/babel-plugin-transform-class-inject-directive\",\n    \"author\": \"Leonardo Apiwan (@homer0) <me@homer0.com>\",\n    \"license\": \"MIT\",\n    \"dependencies\": {\n      \"babel-types\": \"^6.26.0\"\n    },\n    \"devDependencies\": {\n      \"wootils\": \"^1.4.0\",\n      \"eslint\": \"5.9.0\",\n      \"eslint-config-airbnb-base\": \"13.1.0\",\n      \"eslint-plugin-import\": \"2.14.0\",\n      \"eslint-plugin-node\": \"8.0.0\",\n      \"jest-ex\": \"5.0.0\",\n      \"jest-cli\": \"23.6.0\",\n      \"jasmine-expect\": \"3.8.3\",\n      \"esdoc\": \"1.1.0\",\n      \"esdoc-standard-plugin\": \"1.0.0\",\n      \"esdoc-node\": \"1.0.3\",\n      \"leasot\": \"6.6.2\",\n      \"coveralls\": \"3.0.2\"\n    },\n    \"engine-strict\": true,\n    \"engines\": {\n      \"node\": \">=6.0.0\",\n      \"npm\": \">=3.0.0\"\n    },\n    \"main\": \"src/index.js\",\n    \"scripts\": {\n      \"hooks\": \"./utils/hooks/install\",\n      \"test\": \"./utils/scripts/test\",\n      \"lint\": \"./utils/scripts/lint\",\n      \"lint:full\": \"./utils/scripts/lint-full\",\n      \"docs\": \"./utils/scripts/docs\",\n      \"todo\": \"./utils/scripts/todo\"\n    }\n}\n",
+    "longname": "/Users/homer0/CODE/node/babel-plugin-transform-class-inject-directive/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

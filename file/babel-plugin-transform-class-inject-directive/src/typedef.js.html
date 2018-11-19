@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">babel-plugin-transform-class-inject-directive/src/typedef.js | babel-plugin-transform-class-inject-directive</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Detect an inject directive on a class constructor and define a static property with the list of dependencies."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="babel-plugin-transform-class-inject-directive"><meta property="twitter:description" content="Detect an inject directive on a class constructor and define a static property with the list of dependencies."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/homer0/babel-plugin-transform-class-inject-directive"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#src">src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser.html">InjectDirectiveParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-plugin">plugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-BabelPluginTransformClassInjectDirective">BabelPluginTransformClassInjectDirective</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ClassMethodVisitor">ClassMethodVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FunctionDeclarationVisitor">FunctionDeclarationVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FunctionExpressionVisitor">FunctionExpressionVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ParserCallback">ParserCallback</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitor">ProgramVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitorFinish">ProgramVisitorFinish</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitorStart">ProgramVisitorStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Visitors">Visitors</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">AssignmentExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">ExpressionStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths">Path</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">babel-plugin-transform-class-inject-directive/src/typedef.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * @external {Path} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths
+ */
+
+/**
+ * @external {Node} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md
+ */
+
+/**
+ * @external {ExpressionStatement} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md
+ */
+
+/**
+ * @external {AssignmentExpression} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md
+ */
+
+/**
+ * @typedef {Function} ParserCallback
+ * @param {Path} path The Babel information for the object that is currently being processed.
+ * @throws {Error} if called before {@link ProgramVisitorStart}.
+ */
+
+/**
+ * @typedef {Object} ClassMethodVisitor
+ * @property {ParserCallback} enter This is called when Babel starts processing the method.
+ */
+
+/**
+ * @typedef {Object} FunctionDeclarationVisitor
+ * @property {ParserCallback} enter This is called when Babel starts processing the function.
+ */
+
+/**
+ * @typedef {Object} FunctionExpressionVisitor
+ * @property {ParserCallback} enter This is called when Babel starts processing the function.
+ */
+
+/**
+ * @typedef {Function} ProgramVisitorStart
+ */
+
+/**
+ * @typedef {Function} ProgramVisitorFinish
+ * @throws {error} if called before {@link ProgramVisitorStart}
+ */
+
+/**
+ * @typedef {Object} ProgramVisitor
+ * @property {ProgramVisitorStart}  enter This method is called when Babel starts processing a
+ *                                        file. It takes care of creating an instance of
+ *                                        {@link InjectDirectiveParser} so the other
+ *                                        {@link ParserCallback} can use.
+ * @property {ProgramVisitorFinish} exit  This method is called when Babel finishes processing a
+ *                                        file. After parsing all available methods and functions,
+ *                                        it uses the instance of {@link InjectDirectiveParser}
+ *                                        to apply the changes on the code.
+ */
+
+/**
+ * @typedef {Object} Visitors
+ * @property {ClassMethodVisitor}         ClassMethod         The methods inside this object are
+ *                                                            only called when Babel is processing
+ *                                                            a class method.
+ * @property {FunctionDeclarationVisitor} FunctionDeclaration The methods inside this object are
+ *                                                            only called when Babel is processing
+ *                                                            a function declaration
+ *                                                            (`function name (...) { }`).
+ * @property {FunctionExpressionVisitor}  FunctionExpression  The methods inside this object are
+ *                                                            only called when Babel is processing
+ *                                                            a function expression
+ *                                                            (`const name = function (...) { }`).
+ * @property {ProgramVisitor}             Program             The methods inside this object are
+ *                                                            called when Babel starts and
+ *                                                            finishes processing file.
+ */
+
+/**
+ * @typedef {Object} BabelPluginTransformClassInjectDirective
+ * @property {Visitors} visitor A dictionary with keys for each object type Babel processes. In the
+ *                              case of this plugin, it only has keys for methods and functions.
+ */
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

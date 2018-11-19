@@ -1,0 +1,690 @@
+{
+  "type": "File",
+  "start": 0,
+  "end": 3709,
+  "loc": {
+    "start": {
+      "line": 1,
+      "column": 0
+    },
+    "end": {
+      "line": 82,
+      "column": 0
+    }
+  },
+  "program": {
+    "type": "Program",
+    "start": 0,
+    "end": 3709,
+    "loc": {
+      "start": {
+        "line": 1,
+        "column": 0
+      },
+      "end": {
+        "line": 82,
+        "column": 0
+      }
+    },
+    "sourceType": "module",
+    "body": [],
+    "directives": [],
+    "leadingComments": null,
+    "innerComments": [
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @external {Path} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths\n ",
+        "start": 0,
+        "end": 130,
+        "loc": {
+          "start": {
+            "line": 1,
+            "column": 0
+          },
+          "end": {
+            "line": 3,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @external {Node} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+        "start": 132,
+        "end": 252,
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 0
+          },
+          "end": {
+            "line": 7,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @external {ExpressionStatement} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+        "start": 254,
+        "end": 389,
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 0
+          },
+          "end": {
+            "line": 11,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @external {AssignmentExpression} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+        "start": 391,
+        "end": 527,
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 0
+          },
+          "end": {
+            "line": 15,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Function} ParserCallback\n * @param {Path} path The Babel information for the object that is currently being processed.\n * @throws {Error} if called before {@link ProgramVisitorStart}.\n ",
+        "start": 529,
+        "end": 733,
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 0
+          },
+          "end": {
+            "line": 21,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Object} ClassMethodVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the method.\n ",
+        "start": 735,
+        "end": 874,
+        "loc": {
+          "start": {
+            "line": 23,
+            "column": 0
+          },
+          "end": {
+            "line": 26,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Object} FunctionDeclarationVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n ",
+        "start": 876,
+        "end": 1025,
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 0
+          },
+          "end": {
+            "line": 31,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Object} FunctionExpressionVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n ",
+        "start": 1027,
+        "end": 1175,
+        "loc": {
+          "start": {
+            "line": 33,
+            "column": 0
+          },
+          "end": {
+            "line": 36,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Function} ProgramVisitorStart\n ",
+        "start": 1177,
+        "end": 1227,
+        "loc": {
+          "start": {
+            "line": 38,
+            "column": 0
+          },
+          "end": {
+            "line": 40,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Function} ProgramVisitorFinish\n * @throws {error} if called before {@link ProgramVisitorStart}\n ",
+        "start": 1229,
+        "end": 1344,
+        "loc": {
+          "start": {
+            "line": 42,
+            "column": 0
+          },
+          "end": {
+            "line": 45,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Object} ProgramVisitor\n * @property {ProgramVisitorStart}  enter This method is called when Babel starts processing a\n *                                        file. It takes care of creating an instance of\n *                                        {@link InjectDirectiveParser} so the other\n *                                        {@link ParserCallback} can use.\n * @property {ProgramVisitorFinish} exit  This method is called when Babel finishes processing a\n *                                        file. After parsing all available methods and functions,\n *                                        it uses the instance of {@link InjectDirectiveParser}\n *                                        to apply the changes on the code.\n ",
+        "start": 1346,
+        "end": 2100,
+        "loc": {
+          "start": {
+            "line": 47,
+            "column": 0
+          },
+          "end": {
+            "line": 57,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Object} Visitors\n * @property {ClassMethodVisitor}         ClassMethod         The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a class method.\n * @property {FunctionDeclarationVisitor} FunctionDeclaration The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function declaration\n *                                                            (`function name (...) { }`).\n * @property {FunctionExpressionVisitor}  FunctionExpression  The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function expression\n *                                                            (`const name = function (...) { }`).\n * @property {ProgramVisitor}             Program             The methods inside this object are\n *                                                            called when Babel starts and\n *                                                            finishes processing file.\n ",
+        "start": 2102,
+        "end": 3440,
+        "loc": {
+          "start": {
+            "line": 59,
+            "column": 0
+          },
+          "end": {
+            "line": 75,
+            "column": 3
+          }
+        }
+      },
+      {
+        "type": "CommentBlock",
+        "value": "*\n * @typedef {Object} BabelPluginTransformClassInjectDirective\n * @property {Visitors} visitor A dictionary with keys for each object type Babel processes. In the\n *                              case of this plugin, it only has keys for methods and functions.\n ",
+        "start": 3442,
+        "end": 3708,
+        "loc": {
+          "start": {
+            "line": 77,
+            "column": 0
+          },
+          "end": {
+            "line": 81,
+            "column": 3
+          }
+        }
+      }
+    ]
+  },
+  "comments": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {Path} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths\n ",
+      "start": 0,
+      "end": 130,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {Node} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+      "start": 132,
+      "end": 252,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {ExpressionStatement} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+      "start": 254,
+      "end": 389,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {AssignmentExpression} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+      "start": 391,
+      "end": 527,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Function} ParserCallback\n * @param {Path} path The Babel information for the object that is currently being processed.\n * @throws {Error} if called before {@link ProgramVisitorStart}.\n ",
+      "start": 529,
+      "end": 733,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} ClassMethodVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the method.\n ",
+      "start": 735,
+      "end": 874,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} FunctionDeclarationVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n ",
+      "start": 876,
+      "end": 1025,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 0
+        },
+        "end": {
+          "line": 31,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} FunctionExpressionVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n ",
+      "start": 1027,
+      "end": 1175,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 0
+        },
+        "end": {
+          "line": 36,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Function} ProgramVisitorStart\n ",
+      "start": 1177,
+      "end": 1227,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 0
+        },
+        "end": {
+          "line": 40,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Function} ProgramVisitorFinish\n * @throws {error} if called before {@link ProgramVisitorStart}\n ",
+      "start": 1229,
+      "end": 1344,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 0
+        },
+        "end": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} ProgramVisitor\n * @property {ProgramVisitorStart}  enter This method is called when Babel starts processing a\n *                                        file. It takes care of creating an instance of\n *                                        {@link InjectDirectiveParser} so the other\n *                                        {@link ParserCallback} can use.\n * @property {ProgramVisitorFinish} exit  This method is called when Babel finishes processing a\n *                                        file. After parsing all available methods and functions,\n *                                        it uses the instance of {@link InjectDirectiveParser}\n *                                        to apply the changes on the code.\n ",
+      "start": 1346,
+      "end": 2100,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 0
+        },
+        "end": {
+          "line": 57,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} Visitors\n * @property {ClassMethodVisitor}         ClassMethod         The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a class method.\n * @property {FunctionDeclarationVisitor} FunctionDeclaration The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function declaration\n *                                                            (`function name (...) { }`).\n * @property {FunctionExpressionVisitor}  FunctionExpression  The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function expression\n *                                                            (`const name = function (...) { }`).\n * @property {ProgramVisitor}             Program             The methods inside this object are\n *                                                            called when Babel starts and\n *                                                            finishes processing file.\n ",
+      "start": 2102,
+      "end": 3440,
+      "loc": {
+        "start": {
+          "line": 59,
+          "column": 0
+        },
+        "end": {
+          "line": 75,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} BabelPluginTransformClassInjectDirective\n * @property {Visitors} visitor A dictionary with keys for each object type Babel processes. In the\n *                              case of this plugin, it only has keys for methods and functions.\n ",
+      "start": 3442,
+      "end": 3708,
+      "loc": {
+        "start": {
+          "line": 77,
+          "column": 0
+        },
+        "end": {
+          "line": 81,
+          "column": 3
+        }
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {Path} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths\n ",
+      "start": 0,
+      "end": 130,
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {Node} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+      "start": 132,
+      "end": 252,
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {ExpressionStatement} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+      "start": 254,
+      "end": 389,
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 0
+        },
+        "end": {
+          "line": 11,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @external {AssignmentExpression} https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md\n ",
+      "start": 391,
+      "end": 527,
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 0
+        },
+        "end": {
+          "line": 15,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Function} ParserCallback\n * @param {Path} path The Babel information for the object that is currently being processed.\n * @throws {Error} if called before {@link ProgramVisitorStart}.\n ",
+      "start": 529,
+      "end": 733,
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 0
+        },
+        "end": {
+          "line": 21,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} ClassMethodVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the method.\n ",
+      "start": 735,
+      "end": 874,
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 0
+        },
+        "end": {
+          "line": 26,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} FunctionDeclarationVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n ",
+      "start": 876,
+      "end": 1025,
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 0
+        },
+        "end": {
+          "line": 31,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} FunctionExpressionVisitor\n * @property {ParserCallback} enter This is called when Babel starts processing the function.\n ",
+      "start": 1027,
+      "end": 1175,
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 0
+        },
+        "end": {
+          "line": 36,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Function} ProgramVisitorStart\n ",
+      "start": 1177,
+      "end": 1227,
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 0
+        },
+        "end": {
+          "line": 40,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Function} ProgramVisitorFinish\n * @throws {error} if called before {@link ProgramVisitorStart}\n ",
+      "start": 1229,
+      "end": 1344,
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 0
+        },
+        "end": {
+          "line": 45,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} ProgramVisitor\n * @property {ProgramVisitorStart}  enter This method is called when Babel starts processing a\n *                                        file. It takes care of creating an instance of\n *                                        {@link InjectDirectiveParser} so the other\n *                                        {@link ParserCallback} can use.\n * @property {ProgramVisitorFinish} exit  This method is called when Babel finishes processing a\n *                                        file. After parsing all available methods and functions,\n *                                        it uses the instance of {@link InjectDirectiveParser}\n *                                        to apply the changes on the code.\n ",
+      "start": 1346,
+      "end": 2100,
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 0
+        },
+        "end": {
+          "line": 57,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} Visitors\n * @property {ClassMethodVisitor}         ClassMethod         The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a class method.\n * @property {FunctionDeclarationVisitor} FunctionDeclaration The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function declaration\n *                                                            (`function name (...) { }`).\n * @property {FunctionExpressionVisitor}  FunctionExpression  The methods inside this object are\n *                                                            only called when Babel is processing\n *                                                            a function expression\n *                                                            (`const name = function (...) { }`).\n * @property {ProgramVisitor}             Program             The methods inside this object are\n *                                                            called when Babel starts and\n *                                                            finishes processing file.\n ",
+      "start": 2102,
+      "end": 3440,
+      "loc": {
+        "start": {
+          "line": 59,
+          "column": 0
+        },
+        "end": {
+          "line": 75,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": "CommentBlock",
+      "value": "*\n * @typedef {Object} BabelPluginTransformClassInjectDirective\n * @property {Visitors} visitor A dictionary with keys for each object type Babel processes. In the\n *                              case of this plugin, it only has keys for methods and functions.\n ",
+      "start": 3442,
+      "end": 3708,
+      "loc": {
+        "start": {
+          "line": 77,
+          "column": 0
+        },
+        "end": {
+          "line": 81,
+          "column": 3
+        }
+      }
+    },
+    {
+      "type": {
+        "label": "eof",
+        "beforeExpr": false,
+        "startsExpr": false,
+        "rightAssociative": false,
+        "isLoop": false,
+        "isAssign": false,
+        "prefix": false,
+        "postfix": false,
+        "binop": null,
+        "updateContext": null
+      },
+      "start": 3709,
+      "end": 3709,
+      "loc": {
+        "start": {
+          "line": 82,
+          "column": 0
+        },
+        "end": {
+          "line": 82,
+          "column": 0
+        }
+      }
+    }
+  ]
+}

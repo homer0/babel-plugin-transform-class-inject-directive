@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl">
+  <title data-ice="title">Home | babel-plugin-transform-class-inject-directive</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Detect an inject directive on a class constructor and define a static property with the list of dependencies."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="babel-plugin-transform-class-inject-directive"><meta property="twitter:description" content="Detect an inject directive on a class constructor and define a static property with the list of dependencies."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/homer0/babel-plugin-transform-class-inject-directive"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#src">src</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/babel-plugin-transform-class-inject-directive/src/injectDirectiveParser.js~InjectDirectiveParser.html">InjectDirectiveParser</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-plugin">plugin</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-BabelPluginTransformClassInjectDirective">BabelPluginTransformClassInjectDirective</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ClassMethodVisitor">ClassMethodVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FunctionDeclarationVisitor">FunctionDeclarationVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-FunctionExpressionVisitor">FunctionExpressionVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ParserCallback">ParserCallback</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitor">ProgramVisitor</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitorFinish">ProgramVisitorFinish</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-ProgramVisitorStart">ProgramVisitorStart</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-typedef">T</span><span data-ice="name"><span><a href="typedef/index.html#static-typedef-Visitors">Visitors</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">AssignmentExpression</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">ExpressionStatement</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md">Node</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-external">E</span><span data-ice="name"><span><a href="https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#toc-paths">Path</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="babel-plugin-transform-class-inject-directive">babel-plugin-transform-class-inject-directive</h1><p><a href="https://travis-ci.org/homer0/babel-plugin-transform-class-inject-directive"><img src="https://img.shields.io/travis/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square" alt="Travis"></a>
+<a href="https://coveralls.io/github/homer0/babel-plugin-transform-class-inject-directive?branch=master"><img src="https://img.shields.io/coveralls/github/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square" alt="Coveralls github"></a>
+<a href="https://david-dm.org/homer0/babel-plugin-transform-class-inject-directive"><img src="https://img.shields.io/david/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square" alt="David"></a>
+<a href="https://david-dm.org/homer0/babel-plugin-transform-class-inject-directive"><img src="https://img.shields.io/david/dev/homer0/babel-plugin-transform-class-inject-directive.svg?style=flat-square" alt="David"></a></p>
+<p>This is a utility for projects that relay heavily on classes and dependency injection. If a class constructor uses an <code>&apos;inject&apos;</code> directive, the list of parameter names will be copied as strings and placed on an <code>inject</code> static property, so your DI tool can read them.</p>
+<h2 id="example">Example</h2><h3 id="in">In</h3><pre><code class="lang-js"><code class="source-code prettyprint">class MyService {
+  constructor(depOne, depTwo) {
+    &apos;inject&apos;;
+    ...
+  }
+}</code>
+</code></pre>
+<h3 id="out">Out</h3><pre><code class="lang-js"><code class="source-code prettyprint">class MyService {
+  constructor(depOne, depTwo) {
+    &apos;inject&apos;;
+    ...
+  }
+}
+
+MyService.inject = [&apos;depOne&apos;, &apos;depTwo&apos;]</code>
+</code></pre>
+<h2 id="usage">Usage</h2><h3 id="via--code--babelrc--code---recommended-">Via <code>.babelrc</code> (Recommended)</h3><p><strong>.babelrc</strong></p>
+<pre><code class="lang-json"><code class="source-code prettyprint">{
+  &quot;plugins&quot;: [&quot;transform-class-inject-directive&quot;]
+}</code>
+</code></pre>
+<h3 id="via-cli">Via CLI</h3><pre><code class="lang-sh"><code class="source-code prettyprint">babel --plugins transform-class-inject-directive script.js</code>
+</code></pre>
+<h3 id="via-node-api">Via Node API</h3><pre><code class="lang-javascript"><code class="source-code prettyprint">require(&apos;@babel/core&apos;).transform(&apos;code&apos;, {
+  plugins: [&apos;transform-class-inject-directive&apos;],
+});</code>
+</code></pre>
+<h2 id="options">Options</h2><h3 id="-code-directive--code-"><code>directive</code></h3><p><code>string</code>, defaults to <code>inject</code>.</p>
+<p>Tells the plugin which is the name of the directive it should find in order to apply the transformation.</p>
+<h3 id="-code-property--code-"><code>property</code></h3><p><code>string</code>, defaults to <code>inject</code>.</p>
+<p>This is the name of the property the plugin will create in order to define the list of dependencies.</p>
+<h2 id="warning">Warning</h2><p>This only works on classes and regular functions (no arrow). The idea was for it to only work on classes, and the only reason it also works with functions is in order to add support in case you are transforming classes.</p>
+<h2 id="development">Development</h2><p>Before doing anything, install the repository hooks:</p>
+<pre><code class="lang-bash"><code class="source-code prettyprint"># You can either use npm or yarn, it doesn&apos;t matter
+yarn run hooks</code>
+</code></pre>
+<h3 id="npm-yarn-tasks">NPM/Yarn Tasks</h3><table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>yarn run hooks</code></td>
+<td>Install the GIT repository hooks.</td>
+</tr>
+<tr>
+<td><code>yarn test</code></td>
+<td>Run the project unit tests.</td>
+</tr>
+<tr>
+<td><code>yarn run lint</code></td>
+<td>Lint the modified files.</td>
+</tr>
+<tr>
+<td><code>yarn run lint:full</code></td>
+<td>Lint the project code.</td>
+</tr>
+<tr>
+<td><code>yarn run docs</code></td>
+<td>Generate the project documentation.</td>
+</tr>
+<tr>
+<td><code>yarn run todo</code></td>
+<td>List all the pending to-do&apos;s.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="testing">Testing</h3><p>I use <a href="https://facebook.github.io/jest/">Jest</a> with <a href="https://yarnpkg.com/en/package/jest-ex">Jest-Ex</a> to test the project. The configuration file is on <code>./.jestrc</code>, the tests and mocks are on <code>./tests</code> and the script that runs it is on <code>./utils/scripts/test</code>.</p>
+<h3 id="linting">Linting</h3><p>I use <a href="http://eslint.org">ESlint</a> to validate all our JS code. The configuration file for the project code is on <code>./.eslintrc</code> and for the tests on <code>./tests/.eslintrc</code> (which inherits from the one on the root), there&apos;s also an <code>./.eslintignore</code> to ignore some files on the process, and the script that runs it is on <code>./utils/scripts/lint</code>.</p>
+<h3 id="documentation">Documentation</h3><p>I use <a href="http://esdoc.org">ESDoc</a> to generate HTML documentation for the project. The configuration file is on <code>./.esdocrc</code> and the script that runs it is on <code>./utils/scripts/docs</code>.</p>
+<h3 id="to-dos">To-Dos</h3><p>I use <code>@todo</code> comments to write all the pending improvements and fixes, and <a href="https://yarnpkg.com/en/package/leasot">Leasot</a> to generate a report. The script that runs it is on <code>./utils/scripts/todo</code>.</p>
+</div>
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
