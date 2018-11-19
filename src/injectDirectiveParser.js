@@ -131,7 +131,6 @@ class InjectDirectiveParser {
       ({ name } = node.id);
       node = node.init;
       path = path.get('init');
-      ({ node } = path);
     } else {
       topPath = path;
     }
@@ -145,11 +144,12 @@ class InjectDirectiveParser {
       node = this._getClassConstructor(node);
     }
 
-    const hasParams = node.params.length >= 1;
-    if ((babelTypes.isFunctionExpression(node) && hasParams) || babelTypes.isClassMethod(node)) {
-      this._addPropertyAfterPath(node.params, topPath, name);
-    } else if (babelTypes.isFunctionDeclaration(node) && hasParams) {
-      this._addPropertyBeforePath(node.params, path, node.id.name);
+    if (node.params.length) {
+      if (babelTypes.isFunctionExpression(node) || babelTypes.isClassMethod(node)) {
+        this._addPropertyAfterPath(node.params, topPath, name);
+      } else {
+        this._addPropertyBeforePath(node.params, path, node.id.name);
+      }
     }
   }
 }

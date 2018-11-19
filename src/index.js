@@ -6,17 +6,29 @@ module.exports = () => {
     visitor: {
       ClassMethod: {
         enter(path) {
-          parser.parseClassMethod(path);
+          if (parser) {
+            parser.parseClassMethod(path);
+          } else {
+            throw new Error('`ClassMethod.enter` can\'t be called before `Program.enter`');
+          }
         },
       },
       FunctionDeclaration: {
         enter(path) {
-          parser.parseFunction(path);
+          if (path) {
+            parser.parseFunction(path);
+          } else {
+            throw new Error('`FunctionDeclaration.enter` can\'t be called before `Program.enter`');
+          }
         },
       },
       FunctionExpression: {
         enter(path) {
-          parser.parseFunction(path);
+          if (path) {
+            parser.parseFunction(path);
+          } else {
+            throw new Error('`FunctionExpression.enter` can\'t be called before `Program.enter`');
+          }
         },
       },
       Program: {
@@ -24,7 +36,11 @@ module.exports = () => {
           parser = new InjectDirectiveParser(file);
         },
         exit() {
-          parser.transform();
+          if (parser) {
+            parser.transform();
+          } else {
+            throw new Error('`Program.exit` can\'t be called before `Program.enter`');
+          }
         },
       },
     },
