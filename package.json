@@ -2,7 +2,7 @@
     "name": "babel-plugin-transform-class-inject-directive",
     "description": "Detect an inject directive on a class constructor and define a static property with the list of dependencies.",
     "homepage": "https://homer0.github.io/babel-plugin-transform-class-inject-directive/",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "repository": "homer0/babel-plugin-transform-class-inject-directive",
     "author": "Leonardo Apiwan (@homer0) <me@homer0.com>",
     "license": "MIT",
