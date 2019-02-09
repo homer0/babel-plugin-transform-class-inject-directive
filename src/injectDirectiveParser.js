@@ -1,4 +1,4 @@
-const babelTypes = require('babel-types');
+const babelTypes = require('@babel/types');
 /**
  * Parses class methods and functions in order to detect the use of an _"inject directive"_ and
  * replace it with a static property.
