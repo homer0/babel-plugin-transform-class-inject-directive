@@ -1,6 +1,6 @@
 const babelTypes = require('/tests/mocks/babelTypes.mock');
 
-jest.mock('babel-types', () => babelTypes);
+jest.mock('@babel/types', () => babelTypes);
 jest.unmock('/src/injectDirectiveParser');
 
 require('jasmine-expect');
