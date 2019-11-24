@@ -115,10 +115,10 @@ class InjectDirectiveParser {
    * @ignore
    */
   _addPropertyAfterPath(params, path, name) {
-    const newPath = Object.assign({}, path);
-    newPath.node.trailingComments = [];
-    newPath.parentPath.scope.crawl();
-    newPath.insertAfter(this._createPropertyExpression(name, params));
+    // eslint-disable-next-line no-param-reassign
+    path.node.trailingComments = [];
+    path.parentPath.scope.crawl();
+    path.insertAfter(this._createPropertyExpression(name, params));
   }
   /**
    * Tries to add the property with the dependencies after an specific {@link Path}. By _"try"_, it
