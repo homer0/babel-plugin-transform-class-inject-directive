@@ -81,13 +81,13 @@ This only works on classes and regular functions (no arrow). The idea was for it
 
 ### NPM/Yarn Tasks
 
-| Task                 | Description                         |
-|----------------------|-------------------------------------|
-| `yarn test`          | Run the project unit tests.         |
-| `yarn run lint`      | Lint the modified files.            |
-| `yarn run lint:full` | Lint the project code.              |
-| `yarn run docs`      | Generate the project documentation. |
-| `yarn run todo`      | List all the pending to-do's.       |
+| Task            | Description                         |
+|-----------------|-------------------------------------|
+| `test`          | Run the project unit tests.         |
+| `run lint`      | Lint the modified files.            |
+| `run lint:full` | Lint the project code.              |
+| `run docs`      | Generate the project documentation. |
+| `run todo`      | List all the pending to-do's.       |
 
 ### Testing
 
@@ -95,7 +95,7 @@ I use [Jest](https://facebook.github.io/jest/) with [Jest-Ex](https://yarnpkg.co
 
 ### Linting
 
-I use [ESlint](http://eslint.org) to validate all our JS code. The configuration file for the project code is on `./.eslintrc` and for the tests on `./tests/.eslintrc` (which inherits from the one on the root), there's also an `./.eslintignore` to ignore some files on the process, and the script that runs it is on `./utils/scripts/lint`.
+I use [ESlint](http://eslint.org) with [my own custom configuration](http://yarnpkg.com/en/package/eslint-plugin-homer0) to validate all the JS code. The configuration file for the project code is on `./.eslintrc` and the one for the tests is on `./tests/.eslintrc`. There's also an `./.eslintignore` to exclude some files on the process. The script that runs it is on `./utils/scripts/lint`.
 
 ### Documentation
 
