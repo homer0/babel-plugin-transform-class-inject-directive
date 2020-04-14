@@ -154,6 +154,174 @@ describe('InjectDirectiveParser', () => {
     });
   });
 
+  it('should parse and transform a method from a class declaration with decorators', () => {
+    // Given
+    babelTypes.isVariableDeclarator.mockImplementationOnce(() => false);
+    babelTypes.isExportDeclaration.mockImplementationOnce(() => false);
+    babelTypes.isClass.mockImplementationOnce(() => true);
+
+    babelTypes.isAssignmentExpression.mockImplementationOnce(() => true);
+    babelTypes.isSequenceExpression.mockImplementationOnce(() => true);
+    babelTypes.isProgram.mockImplementationOnce(() => false);
+    babelTypes.isProgram.mockImplementationOnce(() => true);
+
+    babelTypes.isFunctionExpression.mockImplementationOnce(() => false);
+    babelTypes.isClassMethod.mockImplementationOnce(() => true);
+    babelTypes.isNode.mockImplementationOnce(() => true);
+
+    babelTypes.isAssignmentPattern.mockImplementationOnce(() => false);
+    babelTypes.isAssignmentPattern.mockImplementationOnce(() => false);
+    babelTypes.stringLiteral.mockImplementationOnce((name) => name);
+    babelTypes.stringLiteral.mockImplementationOnce((name) => name);
+    babelTypes.arrayExpression.mockImplementationOnce((list) => list);
+    babelTypes.identifier.mockImplementationOnce((prop) => prop);
+    babelTypes.memberExpression.mockImplementationOnce((left, right) => ({ left, right }));
+    babelTypes.expressionStatement.mockImplementationOnce((exp) => exp);
+    babelTypes.assignmentExpression.mockImplementationOnce((operator, name, list) => ({
+      operator,
+      name,
+      list,
+    }));
+    let sut = null;
+    const directive = 'inject';
+    const property = 'inject';
+    const file = {
+      opts: {
+        directive,
+        property,
+      },
+    };
+    const ancestry = [];
+    const params = [{ name: 'depOne' }, { name: 'depTwo' }];
+    const paramNames = params.map((param) => param.name);
+    const classMethodPath = {
+      getAncestry: jest.fn(() => ancestry),
+      node: {
+        start: 3,
+        end: 4,
+        kind: 'constructor',
+        body: {
+          directives: [{
+            value: {
+              value: directive,
+            },
+          }],
+        },
+        params,
+      },
+    };
+    const className = 'myClass';
+    const classDeclarationPath = {
+      insertAfter: jest.fn(),
+      node: {
+        start: 1,
+        end: 2,
+        id: {
+          name: className,
+        },
+        body: {
+          body: [classMethodPath.node],
+        },
+      },
+      parent: 'classDeclarationParentPath',
+      parentPath: {
+        scope: {
+          crawl: jest.fn(),
+        },
+      },
+      trailingComments: ['something'],
+    };
+    const sequensePath = {
+      isClassDeclaration: jest.fn(() => true),
+      node: {
+        start: 1,
+        end: 2,
+        id: {
+          name: className,
+        },
+        body: {
+          body: [classMethodPath.node],
+        },
+      },
+      parent: 'sequensePathParent',
+      parentPath: {
+        parent: 'sequensePathParentParent',
+        parentPath: {
+          parentPath: classDeclarationPath,
+        },
+      },
+    };
+    ancestry.push(sequensePath);
+    // When
+    sut = new InjectDirectiveParser(file);
+    sut.parseClassMethod(classMethodPath);
+    sut.transform();
+    // Then
+    expect(classMethodPath.getAncestry).toHaveBeenCalledTimes(1);
+    expect(sequensePath.isClassDeclaration).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isVariableDeclarator).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isVariableDeclarator).toHaveBeenCalledWith(sequensePath.node);
+    expect(babelTypes.isExportDeclaration).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isExportDeclaration).toHaveBeenCalledWith(sequensePath.parent);
+    expect(babelTypes.isClass).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isClass).toHaveBeenCalledWith(sequensePath.node);
+    expect(babelTypes.isAssignmentExpression).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isAssignmentExpression).toHaveBeenCalledWith(sequensePath.parent);
+    expect(babelTypes.isSequenceExpression).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isSequenceExpression).toHaveBeenCalledWith(sequensePath.parentPath.parent);
+    expect(babelTypes.isProgram).toHaveBeenCalledTimes(2);
+    expect(babelTypes.isProgram).toHaveBeenCalledWith(
+      sequensePath.parentPath.parentPath.parentPath
+    );
+    expect(babelTypes.isProgram).toHaveBeenCalledWith(classDeclarationPath);
+    expect(babelTypes.isFunctionExpression).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isFunctionExpression).toHaveBeenCalledWith(classMethodPath.node);
+    expect(babelTypes.isClassMethod).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isClassMethod).toHaveBeenCalledWith(classMethodPath.node);
+    expect(classDeclarationPath.parentPath.scope.crawl).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isNode).toHaveBeenCalledTimes(1);
+    expect(babelTypes.isNode).toHaveBeenCalledWith(className);
+    expect(babelTypes.stringLiteral).toHaveBeenCalledTimes(params.length);
+    expect(babelTypes.isAssignmentPattern).toHaveBeenCalledTimes(params.length);
+    params.forEach((param) => {
+      expect(babelTypes.isAssignmentPattern).toHaveBeenCalledWith(param);
+      expect(babelTypes.stringLiteral).toHaveBeenCalledWith(param.name);
+    });
+    expect(babelTypes.arrayExpression).toHaveBeenCalledTimes(1);
+    expect(babelTypes.arrayExpression).toHaveBeenCalledWith(paramNames);
+    expect(babelTypes.identifier).toHaveBeenCalledTimes(1);
+    expect(babelTypes.identifier).toHaveBeenCalledWith(property);
+    expect(babelTypes.memberExpression).toHaveBeenCalledTimes(1);
+    expect(babelTypes.memberExpression).toHaveBeenCalledWith(className, property);
+    expect(babelTypes.assignmentExpression).toHaveBeenCalledTimes(1);
+    expect(babelTypes.assignmentExpression).toHaveBeenCalledWith(
+      '=',
+      {
+        left: className,
+        right: property,
+      },
+      paramNames
+    );
+    expect(babelTypes.expressionStatement).toHaveBeenCalledTimes(1);
+    expect(babelTypes.expressionStatement).toHaveBeenCalledWith({
+      operator: '=',
+      name: {
+        left: className,
+        right: property,
+      },
+      list: paramNames,
+    });
+    expect(classDeclarationPath.insertAfter).toHaveBeenCalledTimes(1);
+    expect(classDeclarationPath.insertAfter).toHaveBeenCalledWith({
+      operator: '=',
+      name: {
+        left: className,
+        right: property,
+      },
+      list: paramNames,
+    });
+  });
+
   it('should parse and transform a method from a class expression', () => {
     // Given
     babelTypes.isVariableDeclarator.mockImplementationOnce(() => false);

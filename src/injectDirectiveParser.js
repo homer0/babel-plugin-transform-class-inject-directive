@@ -278,6 +278,7 @@ class InjectDirectiveParser {
     if (babelTypes.isClass(node)) {
       ({ name } = node.id);
       node = this._getClassConstructor(node);
+      topPath = this._findProperClassPath(topPath);
     }
 
     if (node.params.length) {
@@ -287,6 +288,34 @@ class InjectDirectiveParser {
         this._addPropertyBeforePath(node.params, path, node.id.name);
       }
     }
+  }
+  /**
+   * When used with decorators, Babel puts the class inside a nested sequence expression that
+   * applies the decorators, and if this plugin were to add the `inject` property right after the
+   * class parent, it can end up in the middle of the sequence and make the code invalid.
+   * This method validates if the class is inside a sequence and crawls the path all the way up
+   * to the variable declaration (child of the program).
+   * @param {Path} path The current {@link Path} that was going to be used for the class.
+   * @return {Path}
+   * @access protected
+   * @ignore
+   */
+  _findProperClassPath(topPath) {
+    let result = topPath;
+    if (
+      result.parent &&
+      babelTypes.isAssignmentExpression(result.parent) &&
+      result.parentPath.parent &&
+      babelTypes.isSequenceExpression(result.parentPath.parent)
+    ) {
+      result = result.parentPath.parentPath;
+
+      while (result.parentPath && !babelTypes.isProgram(result.parentPath)) {
+        result = result.parentPath;
+      }
+    }
+
+    return result;
   }
 }
 
