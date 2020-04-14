@@ -290,10 +290,10 @@ class InjectDirectiveParser {
     }
   }
   /**
-   * When used with decorators, Babel puts the class inside a nested sequense expression that
+   * When used with decorators, Babel puts the class inside a nested sequence expression that
    * applies the decorators, and if this plugin were to add the `inject` property right after the
-   * class parent, it can end up in the middle of the sequense and make the code invalid.
-   * This method validates if the class is inside a sequense and crawls the path all the way up
+   * class parent, it can end up in the middle of the sequence and make the code invalid.
+   * This method validates if the class is inside a sequence and crawls the path all the way up
    * to the variable declaration (child of the program).
    * @param {Path} path The current {@link Path} that was going to be used for the class.
    * @return {Path}
@@ -309,6 +309,7 @@ class InjectDirectiveParser {
       babelTypes.isSequenceExpression(result.parentPath.parent)
     ) {
       result = result.parentPath.parentPath;
+
       while (result.parentPath && !babelTypes.isProgram(result.parentPath)) {
         result = result.parentPath;
       }
